@@ -1,0 +1,18 @@
+
+
+  <app-navbar></app-navbar>
+  <app-sidebar></app-sidebar>
+<div>
+  <p>Benvenuto John. Per vedere il calendario delle operazioni, clicca sotto.</p><br>
+
+  <button>Gestioni prenotazioni</button>
+</div>
+<div id="avviso"> 
+  <p *ngIf="caro,else falso">Bentornato {{persona.nome}} {{persona.cognome}} {{persona.anni}}</p>
+  <ng-template #falso>Non trovato </ng-template>
+  <button>Apri notifica</button>
+  
+</div>
+
+
+<router-outlet></router-outlet>
